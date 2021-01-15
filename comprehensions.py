@@ -13,6 +13,7 @@ def square_for(a):
 def square_compr(a):
     # Напишите свой код здесь
     pass
+    return [(a[i])**2 for i in np.arange(len(a))]
 
 
 def keep_positive_for(a):
@@ -26,6 +27,7 @@ def keep_positive_for(a):
 def keep_positive_compr(a):
     # Напишите свой код здесь
     pass
+    return [a[i] for i in np.arange(len(a))if a[i] > 0 ]
 
 
 def make_dict_for(a):
@@ -38,6 +40,7 @@ def make_dict_for(a):
 def make_dict_compr(a):
     # Напишите свой код здесь
     pass
+    return {str(a[i]): a[i] for i in np.arange(len(a))}
 
 
 def main():
