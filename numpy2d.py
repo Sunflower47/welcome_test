@@ -8,11 +8,14 @@ import numpy as np
 
 def sum_all(a):
     """Возвращает сумму всех элементов"""
-    pass
+  return np.sum(a)
 
 def sum_columns(a):
     """Постолбцовая сумма"""
-    pass
+  c = np.array([0]*len(a[0]))
+  for i in range(len(a[0])):
+    c[i] = np.sum(a.T[i])
+  return c
 
 def sum_rows(a):
     """Построчная сумма"""
